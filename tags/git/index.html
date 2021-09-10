@@ -6,11 +6,11 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>Hexo</title>
+  <title>Tag: git | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta property="og:type" content="website">
 <meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/index.html">
+<meta property="og:url" content="http://example.com/tags/git/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:locale" content="en_US">
 <meta property="article:author" content="John Doe">
@@ -152,112 +152,34 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-Git开发" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
+  
     
-      <header class="article-header">
-        
+    
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2021" class="archive-year">2021</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	<a href="/2021/09/10/Git%E5%BC%80%E5%8F%91/" class="archive-article-date">
+  	<time datetime="2021-09-10T07:12:03.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-09-10</time>
+</a>
+        </div>
+    	 
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2021/09/10/Git%E5%BC%80%E5%8F%91/">Git开发</a>
+      <a class="archive-article-title" href="/2021/09/10/Git%E5%BC%80%E5%8F%91/">Git开发</a>
     </h1>
   
 
-        
-        <a href="/2021/09/10/Git%E5%BC%80%E5%8F%91/" class="archive-article-date">
-  	<time datetime="2021-09-10T07:12:03.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-09-10</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p><img src="https://b3logfile.com/bing/20200320.jpg?imageView2/1/w/960/h/540/interlace/1/q/100"> </p>
-<h1 id="版本控制"><a href="#版本控制" class="headerlink" title="版本控制"></a>版本控制</h1><p>版本控制是指对软件开发过程中各种程序代码、配置文件及说明文档等文件变更的管理，是软件配置管理的核心思想之一。</p>
-<p>版本控制最主要的功能就是追踪文件的变更。它将什么时候、什么人更改了文件的什么内容等信息忠实地了记录下来。每一次文件的改变，文件的版本号都将增加。除了记录版本变更外，版本控制的另一个重要功能是并行开发。软件开发往往是多人协同作业，版本控制可以有效地解决版本的同步以及不同开发者之间的开发通信问题，提高协同开发的效率。并行开发中最常见的不同版本软件的错误(Bug)修正问题也可以通过版本控制中分支与合并的方法有效地解决。</p>
-<p>多个开发必须要使用版本控制，不然会导致资源消耗十分巨大，所以我们迫切需要一个版本控制工具！</p>
-<h2 id="版本控制器的分类"><a href="#版本控制器的分类" class="headerlink" title="版本控制器的分类"></a>版本控制器的分类</h2><ol>
-<li>本地版本控制</li>
-</ol>
-<p><img src="https://b3logfile.com/file/2021/06/image-e5dad500.png" alt="image.png"></p>
-<ol start="2">
-<li>集中版本控制</li>
-</ol>
-<p><img src="https://b3logfile.com/file/2021/06/image-c24a1b7f.png" alt="image.png"></p>
-<p>所有版本都存在服务器上，用户本地只有自己所同步的版本，如果不连网的话，用户就看不到历史版本，也无法切换版本验证问题，或在不同分支工作。而且，所有数据都保存在单一的服务器上，有很大的风险这个服务器会损坏，这样就会丢失所有的数据，当然可以采用定期备份的方法解决这个问题，代表产品：SVN</p>
-<ol start="3">
-<li><p>分布式版本控制</p>
-<p><img src="https://b3logfile.com/file/2021/06/image-78fa2919.png" alt="image.png"></p>
-</li>
-</ol>
-<p>不会因为服务器损坏或者网络问题，造成不能工作的情况。代表产品：Git</p>
-<h2 id="Git和SVN的最主要的区别"><a href="#Git和SVN的最主要的区别" class="headerlink" title="Git和SVN的最主要的区别"></a>Git和SVN的最主要的区别</h2><p><img src="https://b3logfile.com/file/2021/06/image-7769b7ba.png" alt="image.png"></p>
-<h1 id="Git的安装操作"><a href="#Git的安装操作" class="headerlink" title="Git的安装操作"></a>Git的安装操作</h1><p>PS：以后下载遇到下的很慢的情况，很可能是因为外网的速度太慢了，一般都可以去找国内的镜像文件去下载。</p>
-<p>找到镜像文件，下载，无脑下一步即可！</p>
-<p>记得删除的话还要删除环境变量</p>
-<p><img src="https://b3logfile.com/file/2021/06/image-b5d28dbd.png" alt="image.png"></p>
-<p>git config -l:查看Git配置</p>
-<p>git config –system –list:查看系统帮我们的配置</p>
-<p><img src="https://b3logfile.com/file/2021/06/image-c92d132c.png" alt="image.png"></p>
-<h2 id="GIt用户的设置："><a href="#GIt用户的设置：" class="headerlink" title="GIt用户的设置："></a>GIt用户的设置：</h2><p><img src="https://b3logfile.com/file/2021/06/image-1519f5f7.png" alt="image.png"></p>
-<p>git config –global –list:查看用户配置的信息</p>
-<h1 id="Git的基本理论"><a href="#Git的基本理论" class="headerlink" title="Git的基本理论"></a>Git的基本理论</h1><p><img src="https://b3logfile.com/file/2021/06/image-de9d040e.png" alt="image.png"></p>
-<p><img src="https://b3logfile.com/file/2021/06/image-4dadabfb.png" alt="image.png"></p>
-<p><img src="https://b3logfile.com/file/2021/06/image-bb9986c1.png" alt="image.png"></p>
-<p><img src="https://b3logfile.com/file/2021/06/image-dc0ce717.png" alt="image.png"></p>
-<h1 id="Git的一般工作流程"><a href="#Git的一般工作流程" class="headerlink" title="Git的一般工作流程"></a>Git的一般工作流程</h1><p><img src="https://b3logfile.com/file/2021/06/image-a645e7eb.png" alt="image.png"></p>
-<p>如果需要推送到远程，就还需要一个git.put命令</p>
-<p>下图是Git的命令以及所对应的操作</p>
-<p><img src="https://b3logfile.com/file/2021/06/image-8c966386.png" alt="image.png"></p>
-<h1 id="Git项目搭建"><a href="#Git项目搭建" class="headerlink" title="Git项目搭建"></a>Git项目搭建</h1><p>！核心的六个方法：三个上传，三个下载！</p>
-<p>注意创建的文件目录是隐藏目录！</p>
-<p><img src="https://b3logfile.com/file/2021/06/image-9d80f5a2.png" alt="image.png"></p>
-<p>另一种搭建本地仓库的方式：</p>
-<p><img src="https://b3logfile.com/file/2021/06/image-c8d365c1.png" alt="image.png"></p>
-<h2 id="Git文件操作"><a href="#Git文件操作" class="headerlink" title="Git文件操作"></a>Git文件操作</h2><p><img src="https://b3logfile.com/file/2021/06/image-1f2aecd4.png" alt="image.png"></p>
-<h3 id="文件的Git命令"><a href="#文件的Git命令" class="headerlink" title="文件的Git命令"></a>文件的Git命令</h3><p>git status [filename]          #查看指定文件状态</p>
-<p>git status                    #查看所有文件状态</p>
-<p>git add                    #添加所有文件到暂存区</p>
-<p>git commit -m”消息内容”    #提交暂存区的内容到本地仓库 -m 提交信息</p>
-<h3 id="忽略文件的Git命令"><a href="#忽略文件的Git命令" class="headerlink" title="忽略文件的Git命令"></a>忽略文件的Git命令</h3><p><img src="https://b3logfile.com/file/2021/06/image-460438ab.png" alt="image.png"></p>
-<h2 id="使用远程仓库"><a href="#使用远程仓库" class="headerlink" title="使用远程仓库"></a>使用远程仓库</h2><p>GitHub或者Gitee(码云)，有时候公司会搭建自己的gitlab服务器</p>
-<p>第一步：注册账号，完善个人信息</p>
-<p>！这个开源社区在国内的应用十分广，是未来找工作的重要资源！</p>
-<p>第二步：设置本机绑定SSH公钥，实现免密码登录(免密码登录，重要)</p>
-<p>因为码云是远程仓库，我们平常工作都是在本地仓库，设置免密码就可以不用每次登录的时候输入密码</p>
-<p><img src="https://b3logfile.com/file/2021/06/image-8d968807.png" alt="image.png"></p>
-<p>第三步：将生成的公钥上传到马云的仓库管理中</p>
-<p><img src="https://b3logfile.com/file/2021/06/image-d876c71e.png" alt="image.png"></p>
-<p>第四步：使用马云创建一个自己的仓库！</p>
-<p>新建一个仓库</p>
-<p>PS：如果选择了开源，那么许可证的选择就决定了你的项目是否能用随意转载，或不能应用于商用等等。。。就是一种约定</p>
-<h2 id="IDEA中集成操作Git"><a href="#IDEA中集成操作Git" class="headerlink" title="IDEA中集成操作Git"></a>IDEA中集成操作Git</h2><p>第一步：新建项目，绑定GIt</p>
-<p>　　将远程的git文件目录拷贝到项目中即可！</p>
-<p><img src="https://b3logfile.com/file/2021/06/image-d92f5d1d.png" alt="image.png"></p>
-<p>第二步：修改文件，使用IDEA操作git</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">通过git add .命令将文件添加到缓存区</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">通过git commit -m”添加信息”或直接在IDEA中操作，将文件上传到本地仓库</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">通过 git push 将文件上传到远程仓库</span><br></pre></td></tr></table></figure>
-
-<p>第三步：提交测试</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">说明：Git分支</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://b3logfile.com/file/2021/06/image-1659f0fe.png" alt="image.png"></p>
-<p>多个分支如果并行执行，就会导致我们代码不冲突，也就是同时存在多个版本</p>
-<p>如果冲突了就需要协商即可！</p>
-<p>如果同一个文件在合并分支时都被修改了则会引起冲突：解决的办法是我们可以修改冲突文件后重新提交!选择要保留他的代码还是你的代码！</p>
-<p>Master主分支应该非常稳定，用来发布新版本，一般情况下不允许在上面工作，工作一般情况下在新建的dev分支上工作，工作完后，比如上要发布，或者说dev分支代码稳定后可以合并到主分支master上来</p>
-<h2 id="Git拓展"><a href="#Git拓展" class="headerlink" title="Git拓展"></a>Git拓展</h2><p>再想要仔细学习Git的话，可以在GItee上的Git大全上继续学习！</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
+        <div class="article-info info-on-right">
+          
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -269,116 +191,19 @@
 		</ul>
 	</div>
 
-      
+          
 
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2021/09/10/Git%E5%BC%80%E5%8F%91/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
+        </div>
+        <div class="clearfix"></div>
+    </header>
   </div>
 </article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
   
-    <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
+  
+    </div></section>
+  
+
     
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2021/09/10/hello-world/">Hello World</a>
-    </h1>
-  
-
-        
-        <a href="/2021/09/10/hello-world/" class="archive-article-date">
-  	<time datetime="2021-09-10T06:46:51.027Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-09-10</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2021/09/10/hello-world/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-  
 
 
           </div>
@@ -400,10 +225,10 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
+		isHome: false,
 		isPost: false,
 		isArchive: false,
-		isTag: false,
+		isTag: true,
 		isCategory: false,
 		open_in_new: false,
 		toc_hide_index: true,
